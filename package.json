@@ -1,0 +1,16 @@
+{
+  "name": "xavier",
+  "version": "1.0.0",
+  "description": "micro-site for Xaxier University",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ray Finton",
+  "license": "ISC"
+}

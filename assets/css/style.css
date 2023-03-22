@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Egyptienne;
+  src: url('../fonts/egyptienne/egyptienne-roman.otf');
+}
+
+@font-face {
+  font-family: Egyptienne-Black;
+  src: url('../fonts/egyptienne/egyptienne-black.otf');
+}
+
+@font-face {
+  font-family: Frutiger;
+  src: url('../fonts/frutiger/frutiger-roman.otf');
+}
+
+@font-face {
+  font-family: Frutiger-Black;
+  src: url('../fonts/frutiger/frutiger-black.otf');
+}
+
+.egyptienne-black {
+  font-family: 'Egyptienne-Black', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-content {
+  width: 100%;
+  margin: auto;
+}
+
+.image-header.home {
+  width: 100%;
+  background-color: #000;
+  background-image: url('../images/nature_scene.jpg');
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  background-position: right 60%;
+  opacity: 0;
+}
+
+.image-header.thanks {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  background-image: url('../images/last-spread_web.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 32%;
+  opacity: 0;
+}
+
+.image-header .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.15);
+}
+
+.image-header img {
+  height: 40%;
+  opacity: 0;
+}
+
+.main-text {
+  width: 75%;
+  margin: 30px auto;
+  font-family: 'Egyptienne', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 18pt;
+  color:	#002d98;
+  opacity: 0;
+}
+
+.main-text p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+form {
+  width: 70%;
+  margin: 60px auto;
+}
+
+label {
+  font-family: 'Egyptienne-Black', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-top: 60px;
+}
+
+input[type="text"] {
+  background-color: rgba(0,0,0,0.15);
+  font-family: 'Frutiger';
+  font-size: 16pt;
+  padding: 12px;
+  height: auto;
+}
+
+.row.actions {
+  margin-top: 60px;
+}
+
+.actions, .footer {
+  text-align: center;
+}
+
+.actions input.btn {
+  background-color: #75beea;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 18pt;
+}
+
+.actions input.btn:hover, .link.btn.btn-info:hover {
+  background-color: #003e71;
+  color: #80e6ff;
+}
+
+.footer {
+  background-color:	#75beea;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 14pt;
+  font-family: 'Egyptienne';
+}
+
+#selection {
+  font-style: italic;
+  font-weight: bold;
+}
+#screen-layer {
+  width: 100%;
+  height: 1500px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+
+#screen-layer img {
+  margin-top: 20%;
+  transform-origin: center center;
+  transform: scale(2,2);
+}
+
+.btn {
+  white-space: inherit;
+}
+
+.links {
+  text-align: center;
+}
+
+.link.btn.btn-info {
+  background: #75beea;
+  width: 100%;
+  margin: 8px;
+  padding: 30px 0;
+}
+
+a.link.btn.btn-info {
+  font-size: 18pt;
+  text-align: center;
+}
+
+/* ================================= */
+
+@media screen and (max-width:1024px) {
+  div, p, a, label, input, input[type="text"] {
+    font-size: 14pt;}
+
+  .image-header.home {
+    min-height: 240px !important;
+    background-image: url('../images/nature_scene_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;}
+
+  .image-header.thanks {
+    min-height: 240px !important;
+    background-image: url('../images/last-spread_web_mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;}
+
+  .image-header img {
+    width: 80%;
+    height: auto;}
+
+  .main-text {
+    width: 90%;}
+
+  form {
+    margin-top: 30px;
+    width: 100%;}
+
+  .actions input.btn {
+    margin-bottom: 15px;}
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;}
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .image-header img {
+    width: 40%;}
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .links.row .col-xs-6 {
+    padding: 6px;}
+
+  a.link.btn.btn-info {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1;}
+
+  #screen-layer img {
+    margin-top: 40%;
+    transform-origin: center center;
+    transform: scale(2,2);}
+}
